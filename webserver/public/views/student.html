@@ -1,0 +1,91 @@
+
+<div class="w3-row">
+<div class="w3-col w3-card-4" style="width:39%">
+	
+	<div class="w3-container w3-theme">
+	<h3>Search Student</h3>
+	</div>
+
+	<form class="w3-container w3-theme-l5">
+
+	<p>
+	<input type="text" class="w3-input w3-border" placeholder="Enter Student Name" ng-model="sname" autofocus="">
+	</p>
+	</form>
+	
+	
+	<div class="w3-container w3-theme-l5" style="width:100%;height:500px;overflow-y:scroll">
+		<div  ng-repeat="student in students | filter: sname">
+			<div class="w3-row w3-container w3-border w3-theme-l5">
+			
+				<div class="w3-container l5">
+			
+					<div class="w3-row"><h4 class="w3-medium" ng-click="show(student.id)"><b>{{student.name}}</b></h4></div>
+				</div>	
+				
+				</div>
+			
+		</div>
+		</div>
+</div>
+
+<div class="w3-col" style="width:2%">
+	&nbsp
+</div>
+<div class="w3-col w3-card-4" style="width:59%">
+	<div class="w3-container w3-theme">
+	<h3>Student Information</h3>
+	</div>
+	<div class="w3-container w3-theme-l5" style="width:100%;height:570px;overflow-y:scroll">
+		
+
+				<div class="w3-container l5">
+					&nbsp 
+					
+					<div class="w3-row"><h4 class="w3-medium">AdharCard No : <b>{{student_info[0].id}}</b></h4></div>
+					<div class="w3-row"><h4 class="w3-medium">Student Name : <b>{{student_info[0].name}}</b></h4></div>
+				<!--
+					<div class="w3-row"><h4 class="w3-medium">Student Gender : <b>{{student.gender}}</b></h4></div>
+					<div class="w3-row"><h4 class="w3-medium">Studentd Guardians name  : <b>{{student.Guardians_name }}</b></h4></div>
+					<div class="w3-row"><h4 class="w3-medium">Student City : <b>{{student.city}}</b></h4></div>
+					<div class="w3-row"><h4 class="w3-medium">Student Education Year : <b>{{student.educational year}}</b></h4></div>
+					<div class="w3-row"><h4 class="w3-medium">School ID : <b>{{scl.ID}}</b></h4></div>
+					<div class="w3-row"><h4 class="w3-medium">School Name : <b>{{scl.name}}</b></h4></div>
+				    <div class="w3-row"><h4 class="w3-medium">School Address : <b>{{scl.addr}}</b></h4></div>
+					<div class="w3-row"><h4 class="w3-medium">Telephone No : <b>{{scl.telephone no}}</b></h4></div>
+				-->
+				</div>	
+	
+		</div>
+</div>
+
+</div>
+	
+	<!--
+<div class="w3-col w3-card-4" style="width:59%">
+	<div class="w3-container w3-theme">
+	<h3>Student Data</h3>
+	</div>
+	
+		<div class="w3-container" ng-repeat="student in students">
+			&nbsp
+			<div class="w3-row w3-container w3-card-4 w3-theme-l4">
+
+				<div class="w3-container l5">
+					&nbsp 
+					<div class="w3-row"><h4 class="w3-medium">
+				    Student ID : <input type="text" ng-model="student.name" /><br /></h4></div>
+					
+					<div class="w3-row"><h4 class="w3-medium">Student Name : <input type="text" ng-model="student.name" /><br /></h4></div>
+					
+				</div>	
+				&nbsp
+				</div>
+		</div>
+	 <br> <input type="button" ng-click="Back()" value="BACK" class="btn btn-link" /> </br>
+	</div>	
+	
+
+
+</div>
+-->
